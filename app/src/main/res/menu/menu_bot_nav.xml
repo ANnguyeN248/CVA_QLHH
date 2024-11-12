@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itHome"
+        android:title="Trang trủ"
+        android:icon="@drawable/homee"/>
+    <item android:id="@+id/itStockOut"
+        android:title="Thống kê"
+        android:icon="@drawable/stock_out"/>
+    <item android:id="@+id/itInventory"
+        android:title="Hàng tồn"
+        android:icon="@drawable/inventory"/>
+    <item android:id="@+id/itThongTin"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_person"/>
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    tools:context=".Fragment.BillListFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/b612_mono_bold_italic"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:background="#76A5CC"
+        android:paddingVertical="5dp"
+        android:text="Hóa Đơn" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvBills"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="7dp"
+        android:background="#fff"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Cva_qlkh" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <style name="Theme.Cva_qlkh" parent="Base.Theme.Cva_qlkh" />
+    <style name="theme_CardView" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style>
+</resources>

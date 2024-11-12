@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784999480383",
+    "project_id": "cvaqlkh",
+    "storage_bucket": "cvaqlkh.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784999480383:android:6e1a28e985dc6e9e708c8a",
+        "android_client_info": {
+          "package_name": "com.anpt.cva_qlkh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClvphUdRwlTdFgS2nSTiL7ijX5hg42U1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

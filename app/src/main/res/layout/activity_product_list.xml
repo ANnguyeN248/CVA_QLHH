@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6dde7"
+    tools:context=".Activities.ManagementScreen.ProductTypeListActivity">
+
+    <LinearLayout
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:background="#056EC5">
+
+        <ImageView
+            android:id="@+id/back_Product_Manager"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_back"
+            app:tint="#fff"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lí sản phẩm"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/item1"
+        android:id="@+id/rcv_Product"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/add"
+        app:maxImageSize="40dp"
+        app:tint="#2196F3"
+        android:backgroundTint="#fff"
+        android:id="@+id/add_Product"/>
+
+</RelativeLayout>
+</layout>

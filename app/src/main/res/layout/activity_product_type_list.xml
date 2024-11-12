@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#c6dde7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ManagementScreen.ProductListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProType"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:title="Product Type"
+        app:titleTextColor="#331139"
+        android:background="#76A5CC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@id/toolbarProType">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvProductType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbarProType"/>
+    </LinearLayout>
+</RelativeLayout>
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#c6dde7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView_edit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:srcCompat="@drawable/baseline_person_24"
+            app:strokeColor="#3F51B5"
+            app:strokeWidth="5dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnPickImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5E5E5E"
+            android:clickable="true"
+            android:tint="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_edit"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_edit"
+            app:srcCompat="@drawable/ic_edit"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/constraint"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSave_imgEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#727587"
+            android:text="Save"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btnCancel_imgEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#727587"
+            android:textColor="#fff"
+            android:text="Cancel" />
+    </LinearLayout>
+</RelativeLayout>
